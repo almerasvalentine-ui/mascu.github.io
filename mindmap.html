@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carte mentale — La perception masculiniste</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="index.html" class="brand">PERCEPTION<span>.</span>MASCULINISTE</a>
+  <nav>
+    <a href="index.html">Introduction</a>
+    <a href="mindmap.html" class="active">Carte mentale</a>
+  </nav>
+</header>
+
+<section class="map-header">
+  <h1 class="display">Revue de littérature</h1>
+  <p>Sept idées tirées de l'article de Tanguy Grannis, « Le patriarcat sans (le) pouvoir ? Les hommes et le féminisme après #MeToo » (2020). Cliquez un nœud pour lire le paragraphe complet.</p>
+</section>
+
+<div class="map-wrap" id="mapWrap">
+  <svg id="mapSvg"></svg>
+
+  <button class="node center" data-node="center" style="left:50%; top:50%;">
+    <p class="n-title">GRANNIS<br>2020</p>
+  </button>
+
+  <button class="node" data-node="n1" data-target="panel-1">
+    <p class="n-index">01</p>
+    <p class="n-title">Le paradoxe post-patriarcal</p>
+  </button>
+
+  <button class="node" data-node="n2" data-target="panel-2">
+    <p class="n-index">02</p>
+    <p class="n-title">La hausse des féminicides</p>
+  </button>
+
+  <button class="node" data-node="n3" data-target="panel-3">
+    <p class="n-index">03</p>
+    <p class="n-title">« Femmes indignes 6.0 »</p>
+    <span class="n-icon">contient une image</span>
+  </button>
+
+  <button class="node" data-node="n4" data-target="panel-4">
+    <p class="n-index">04</p>
+    <p class="n-title">L'enfermement algorithmique</p>
+  </button>
+
+  <button class="node" data-node="n5" data-target="panel-5">
+    <p class="n-index">05</p>
+    <p class="n-title">Boys' club &amp; SOS papa</p>
+    <span class="n-icon">contient un audio</span>
+  </button>
+
+  <button class="node" data-node="n6" data-target="panel-6">
+    <p class="n-index">06</p>
+    <p class="n-title">Le contrôle étendu au numérique</p>
+  </button>
+
+  <button class="node" data-node="n7" data-target="panel-7">
+    <p class="n-index">07</p>
+    <p class="n-title">Dépasser le cadre patriarcal</p>
+  </button>
+</div>
+
+<footer class="site-footer">
+  <span>Travail de recherche — Culture digitale</span>
+  <span>Source : Grannis, T. (2020), Nouvelles Questions Féministes, 39(1), 116-131.</span>
+</footer>
+
+<!-- ===================== PANELS ===================== -->
+
+<div class="panel-backdrop" id="backdrop"></div>
+
+<aside class="panel" id="panel-1">
+  <button class="panel-close" data-close>← Fermer</button>
+  <p class="p-index">Idée 01</p>
+  <h2>Le paradoxe post-patriarcal</h2>
+  <p>Afin d'examiner les raisons de la persistance du masculinisme dans une société qualifiée de « post-patriarcale », l'article de Tanguy Grannis — agrégé de philosophie, dont les recherches portent sur la masculinité blanche patriarcale — s'intéresse à l'expression des violences masculines et masculinistes dans un monde où les moyens matériels d'oppression masculine ont été majoritairement supprimés, tel que le décrit Éric Macé.</p>
+  <p>Tout l'intérêt de l'article est de souligner le paradoxe entre les efforts importants menés pour lutter contre les violences masculines et la recrudescence des féminicides.</p>
+</aside>
+
+<aside class="panel" id="panel-2">
+  <button class="panel-close" data-close>← Fermer</button>
+  <p class="p-index">Idée 02</p>
+  <h2>La hausse des féminicides</h2>
+  <p>Pour sourcer ce paradoxe, on peut reprendre les chiffres de la Fondation des femmes, qui décompte dans son enquête la plus récente une hausse de 11 % du nombre de féminicides entre 2023 et 2024. L'auteur expose ainsi le fossé apparu entre une prise de conscience collective des violences masculines et une minorité masculiniste encore convaincue d'une supériorité naturelle des hommes sur les femmes.</p>
+</aside>
+
+<aside class="panel" id="panel-3">
+  <button class="panel-close" data-close>← Fermer</button>
+  <p class="p-index">Idée 03</p>
+  <h2>« Femmes indignes 6.0 »</h2>
+  <p>Grannis démontre son argument principal en exposant qu'il est très simple d'accéder aux contenus féministes sur les réseaux sociaux, et qu'il existe à l'inverse un manque d'ouverture, chez les masculinistes, aux contenus ne validant pas leurs opinions. Il utilise l'exemple du groupe Facebook masculiniste « Femmes indignes 6.0 résurrection », qui expose ses membres à des contenus toujours plus violents.</p>
+  <div class="media-block">
+    <p class="m-label">Capture — Femmes indignes 6.0 résurrection</p>
+    <img src="assets/image_mascu.jpg" alt="Capture d'écran du groupe Facebook Femmes indignes 6.0 résurrection" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'media-fallback',textContent:'image_mascu.jpg introuvable — placez le fichier dans /assets/'}))">
+  </div>
+</aside>
+
+<aside class="panel" id="panel-4">
+  <button class="panel-close" data-close>← Fermer</button>
+  <p class="p-index">Idée 04</p>
+  <h2>L'enfermement algorithmique</h2>
+  <p>Il est cependant important de nuancer ce constat par le fonctionnement des algorithmes des réseaux sociaux, qui poussent les utilisateurs à s'enfermer dans des boucles imbriquées plutôt que de favoriser la perméabilité du contenu qui leur est proposé.</p>
+</aside>
+
+<aside class="panel" id="panel-5">
+  <button class="panel-close" data-close>← Fermer</button>
+  <p class="p-index">Idée 05</p>
+  <h2>Boys' club &amp; SOS papa</h2>
+  <p>Un autre aspect couvert par l'article est le glissement de groupes d'hommes a priori peu enclins à la violence — les « boys' club » — vers un antiféminisme radical. Grannis reprend les mots de Sandra Lucbert pour expliciter ce mécanisme : le fonctionnement algorithmique de Facebook renforce l'entre-soi et la polarisation des positions en favorisant les biais consensuels.</p>
+  <p>Favorisés par des rapports de genre antinomiques, ces groupes de pairs se forment en grand nombre sur les réseaux sociaux et peuvent mener des communautés — comme celle des pères divorcés — vers des dérives masculinistes. Grannis prend ici l'exemple de SOS papa, une association de pères divorcés ayant connu plusieurs dérives masculinistes violentes.</p>
+  <div class="media-block">
+    <p class="m-label">Extrait audio — SOS papa</p>
+    <audio controls src="assets/papa.mp3" onerror="this.replaceWith(Object.assign(document.createElement('p'),{className:'media-fallback',textContent:'papa.mp3 introuvable — placez le fichier dans /assets/'}))"></audio>
+  </div>
+</aside>
+
+<aside class="panel" id="panel-6">
+  <button class="panel-close" data-close>← Fermer</button>
+  <p class="p-index">Idée 06</p>
+  <h2>Le contrôle étendu au numérique</h2>
+  <p>L'article expose également l'extension de la sphère du contrôle sur les femmes au-delà du foyer, à travers l'emprise du numérique sur les vies. Ce phénomène n'est toutefois pas nouveau : le contrôle par l'exclusion s'est exercé pendant des siècles sur les femmes — le droit de vote, par exemple, ne leur a été accordé en France qu'en 1944.</p>
+</aside>
+
+<aside class="panel" id="panel-7">
+  <button class="panel-close" data-close>← Fermer</button>
+  <p class="p-index">Idée 07</p>
+  <h2>Dépasser le cadre patriarcal</h2>
+  <p>Grannis présente enfin des pistes pour contrer les comportements masculinistes, notamment la nécessaire conscientisation des privilèges masculins existants afin d'atteindre une véritable équité entre hommes et femmes. Il conclut sur un nécessaire dépassement du cadre patriarcal, estimant que les violences masculines actuelles ne sont que le signe d'une impossible réalisation de l'ordre patriarcal.</p>
+  <p>Bien que pertinente, cette réflexion doit être nuancée : les conditions matérielles de cette équité restent fragiles, et la pérennité des efforts de dépassement du patriarcat dépend aussi d'une promotion accrue des idées féministes.</p>
+</aside>
+
+<script src="script.js"></script>
+</body>
+</html>
